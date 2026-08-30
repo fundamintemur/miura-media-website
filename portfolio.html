@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio — Miura Media</title>
+    <meta
+      name="description"
+      content="Miura Media — full photography and videography portfolio, including weddings, restaurants, and branded content."
+    />
+    <link rel="canonical" href="https://miuramedia.info/portfolio.html" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Portfolio — Miura Media" />
+    <meta
+      property="og:description"
+      content="Full photography and videography portfolio, including weddings, restaurants, and branded content."
+    />
+    <meta
+      property="og:image"
+      content="https://miuramedia.info/images/logo.webp"
+    />
+    <meta property="og:url" content="https://miuramedia.info/portfolio.html" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Portfolio — Miura Media" />
+    <meta
+      name="twitter:description"
+      content="Full photography and videography portfolio, including weddings, restaurants, and branded content."
+    />
+    <meta
+      name="twitter:image"
+      content="https://miuramedia.info/images/logo.webp"
+    />
+    <link rel="icon" type="image/png" href="images/logo-eye.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@800;900&family=Fraunces:opsz,wght@9..144,400;9..144,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Playfair+Display:wght@500;600&family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- ============ NAVBAR (site geneli ile aynı) ============ -->
+    <nav>
+      <div class="brand">
+        <a href="index.html">
+          <img
+            src="images/logo.webp"
+            alt="Miura Media"
+            style="height: 97px; width: auto; display: block"
+          />
+        </a>
+      </div>
+      <div class="navlinks">
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#services">Services</a>
+        <a href="portfolio.html" class="active">Portfolio</a>
+        <a href="index.html#pricing">Pricing</a>
+        <a href="index.html#booking">Booking</a>
+      </div>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <button
+        class="mobile-menu-close"
+        id="mobileMenuClose"
+        aria-label="Close menu"
+      >
+        &times;
+      </button>
+      <a href="index.html">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#services">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="index.html#pricing">Pricing</a>
+      <a href="index.html#booking">Booking</a>
+    </div>
+
+    <!-- ============ PAGE HEADER — başlık + breadcrumb + BİZİM dönen rozet ============ -->
+    <div class="page-header">
+      <!-- 1. KUTU: başlık + çizgi + breadcrumb hepsi burada -->
+      <div>
+        <div class="page-header-title">
+          <h1 class="display">Portfolio</h1>
+          <span class="rule"></span>
+        </div>
+        <!-- <div class="breadcrumb" style="margin-top: 18px;">
+      <a href="index.html">Home</a>
+      <span class="sep">—</span>
+      <span class="current">Portfolio</span>
+    </div> -->
+      </div>
+
+      <!-- 2. KUTU: rozet — page-header'ın DOĞRUDAN çocuğu, başlığın dışında -->
+      <div class="badge">
+        <svg viewBox="0 0 130 130">
+          <g class="ring">
+            <defs>
+              <path
+                id="circlePath2"
+                d="M 65,65 m -52,0 a 52,52 0 1,1 104,0 a 52,52 0 1,1 -104,0"
+              />
+            </defs>
+            <text>
+              <textPath href="#circlePath2" startOffset="0%">
+                PHOTO · VIDEO · MARKETING · MIURA MEDIA ·
+              </textPath>
+            </text>
+          </g>
+          <image
+            href="images/logo-eye.png"
+            x="30"
+            y="52"
+            width="70"
+            height="27.5"
+          />
+        </svg>
+      </div>
+    </div>
+
+    <!-- ============ FULL PORTFOLIO GRID ============ -->
+    <section id="portfolio-full">
+      <div class="grid" data-portfolio-grid></div>
+    </section>
+    <footer>
+      <div>
+        <div class="fbrand">MIURA MEDIA</div>
+        <div>Photo · Video · Marketing</div>
+        <div style="font-size: 12px; opacity: 0.6; margin-top: 4px">
+          Chicago, IL
+        </div>
+      </div>
+      <div>© 2026 Miura Media · All Rights Reserved.
+         <a href="privacy.html" style="color: inherit;">Privacy Policy</a>
+      </div>
+    </footer>
+
+    <div class="lightbox" id="lightbox">
+      <span class="lightbox-close" id="lightboxClose">&times;</span>
+      <button
+        class="lightbox-nav lightbox-prev"
+        id="lightboxPrev"
+        aria-label="Previous"
+      >
+        &#8249;
+      </button>
+      <img id="lightbox-img" src="" alt="" />
+      <button
+        class="lightbox-nav lightbox-next"
+        id="lightboxNext"
+        aria-label="Next"
+      >
+        &#8250;
+      </button>
+    </div>
+    <script src="js/portfolio-data.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
