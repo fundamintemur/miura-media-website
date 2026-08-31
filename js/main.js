@@ -221,7 +221,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// Görüntülenen grid'deki resimlerin listesini ve lightbox navigasyonunu yönetir.
+
 let lightboxImages = [];
 let lightboxIndex = 0;
 
@@ -230,7 +230,7 @@ function attachLightbox(container) {
   const lightboxImg = document.getElementById("lightbox-img");
   if (!lightbox || !lightboxImg) return;
 
-  // O an grid'de gösterilen tüm resimlerin URL listesini çıkar
+  
   lightboxImages = Array.from(container.querySelectorAll(".g-tile")).map(
     (tile) => {
       const bg = getComputedStyle(tile).backgroundImage;
@@ -275,7 +275,7 @@ function lightboxPrev() {
   showLightboxImage();
 }
 
-// Lightbox kapatma + ok butonları + klavye ok tuşları — sayfa yüklendiğinde bir kez bağlanır
+
 document.addEventListener("DOMContentLoaded", () => {
   const lightbox = document.getElementById("lightbox");
   const lightboxClose = document.getElementById("lightboxClose");
@@ -380,7 +380,7 @@ if (bookingForm) {
   bookingForm.addEventListener("submit", function (e) {
     e.preventDefault();
 
-    // honeypot kontrolü — bot buraya bir şey yazdıysa formu sessizce iptal et
+    
     if (document.getElementById("booking-hp").value) {
       return;
     }
