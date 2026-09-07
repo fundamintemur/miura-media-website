@@ -429,4 +429,4 @@ if (bookingForm) {
 }
 
 
- if (window.location.pathname.toLowerCase().endsWith("/index.html")) { window.location.replace( window.location.origin + window.location.pathname.slice(0, -"index.html".length) + window.location.search + window.location.hash ); }
+ 
