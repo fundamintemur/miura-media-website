@@ -9,7 +9,6 @@
       content="Miura Media — professional photography, videography & content marketing for weddings, restaurants and brands."
     />
     <link rel="canonical" href="https://miuramedia.info/" />
-     
 
     <meta property="og:type" content="website" />
     <meta
@@ -39,7 +38,7 @@
       name="twitter:image"
       content="https://miuramedia.info/images/logo.webp"
     />
-    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
       rel="stylesheet"
@@ -533,13 +532,42 @@
                   value=""
                 />
               </div>
-              <input
-                class="field"
-                type="date"
-                id="booking-date"
-                placeholder="Preferred date"
-                min="2026-08-30"
-              />
+              <div class="date-field-wrap">
+                <input
+                  class="field date-field"
+                  type="date"
+                  id="booking-date"
+                  placeholder="Preferred date"
+                  min="2026-08-30"
+                />
+                <svg
+                  class="date-field-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <rect
+                    x="3.5"
+                    y="5.5"
+                    width="17"
+                    height="15"
+                    rx="2"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  />
+                  <path
+                    d="M3.5 9.5h17"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  />
+                  <path
+                    d="M8 3.5v3.5M16 3.5v3.5"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
               <textarea
                 class="field"
                 id="booking-notes"
@@ -610,7 +638,7 @@
             <div class="fbrand">MIURA MEDIA</div>
             <div>Photo · Video · Marketing</div>
             <div style="font-size: 12px; opacity: 0.6; margin-top: 4px">
-            Jacksonville,FL
+              Jacksonville,FL
             </div>
           </div>
           <div>

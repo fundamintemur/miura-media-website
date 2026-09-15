@@ -118,7 +118,7 @@ nav {
 }
 
 section {
-  padding: 70px 48px;   /* 100px yerine 70px */
+  padding: 70px 48px; /* 100px yerine 70px */
   border-bottom: 1px solid var(--line);
 }
 .flank {
@@ -269,7 +269,7 @@ section {
 }
 
 @media (max-width: 640px) {
-   section {
+  section {
     padding: 32px 20px;
   }
   #home .name {
@@ -540,17 +540,38 @@ section {
 .field::placeholder {
   color: var(--text-dim);
 }
-input[type="date"].field::-webkit-calendar-picker-indicator {
-  filter: invert(1) brightness(1.3);
-  opacity: 0.85;
-  cursor: pointer;
-  padding: 4px;
+.date-field-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
 }
-input[type="date"].field::-webkit-calendar-picker-indicator:hover {
-  opacity: 1;
+.date-field-wrap .field {
+  padding-right: 46px;
+}
+.date-field-icon {
+  position: absolute;
+  top: 27%;
+  right: 19px;
+  width: 21px;
+  height: 21px;
+  color: var(--text-dim);
+  pointer-events: none;
+}
+.date-field-wrap:focus-within .date-field-icon {
+  color: var(--teal);
+}
+input[type="date"].field::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
 }
 input[type="date"].field {
   color-scheme: dark;
+  position: relative;
 }
 textarea.field {
   resize: vertical;
